@@ -1,6 +1,6 @@
 {
   "name": "cordova-version-sync",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "put me in 'version' script of your package.json and I'll sync config.xml file with npm package version",
   "main": "index.js",
   "scripts": {

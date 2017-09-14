@@ -9,6 +9,12 @@ fs.readFile(cordovaConfig, function (err, data) {
   if (err) throw err
   data = data.toString()
   data = data.replace(/(<widget.*version=")[0-9\.]*/, '$1' + packageJson.version)
-  fs.writeFile(cordovaConfig, data)
+  fs.writeFile(cordovaConfig, data, function(err) {
+    if (err) {
+      console.error('Error writing ', cordovaConfig, ': ', err)
+    } else {
+      console.error('Version changed to: ', packageJson.version)
+    }
+  })
 })
 
