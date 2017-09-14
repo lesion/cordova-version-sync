@@ -1,0 +1,14 @@
+{
+  "name": "cordova-version-sync",
+  "version": "1.0.1",
+  "description": "put me in 'version' script of your package.json and I'll sync config.xml file with npm package version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cordova-version-sync": "index.js"
+  },
+  "author": "lesion <lesion@autistici.org> (http://lesion.github.io/)",
+  "license": "ISC"
+}
