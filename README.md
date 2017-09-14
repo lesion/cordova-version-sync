@@ -16,13 +16,14 @@ with this script in it:
 
 then edit package.json to the script:
 
-// somewhere in your package.json
-`
+// somewhere in your package.json  
+
+```
  "scripts": {
     "dev": "node webpack/dev-server.js",
     "build": "node webpack/build.js",
     "version": "cordova-version-sync"
   },
-`
+```
 
 now you can use `npm version` command and config.xml will follow !
